@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Floristeria">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Floristeria - La Primavera</title>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+		<script src="js/dependencies/angular.min.js"></script>
+		<script src="js/dependencies/angular-route.min.js"></script>
+	</head>
+
+	<body>
+
+	<!-- Encabezado -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Floristeria Primavera<br>
+		<small>Donde las flores importan</small></h1>
+		</div>
+	</div>
+
+	<!-- Menu -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 sidebar">
+
+				<ul class="nav nav-pills nav-stacked">
+				  <li class="active">
+				  		<a href="#Inicio" data-toggle="tab">Inicio</a>
+				  </li>
+				  <li><a href="#Catalogo" data-toggle="tab">Catálogo de Flores</a></li>
+				  <li><a href="#Ordenar" data-toggle="tab">Ordenar</a></li>
+
+				  <li class="collapse" data-toggle="tab" >
+				    <a data-toggle="collapse" data-target="#sub1" href="#na">Contáctanos<span class="caret"></span></a>
+				    
+				    <ul id="sub1" class="collapse">
+				      <li><a href="http://www.google.com">Acerca de</a></li> 
+				    </ul>
+				  </li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+			<div ng-view></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pie de Pagina -->
+	<footer class="footer">
+		<div class="container text-center">
+		   <hr />
+		   <h2 class="text-left">Afiliados</h2>
+		   <hr />
+		   <div class="row" ng-controller="ListaCtrl">
+			 	<div ng-repeat="x in patro" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<img src="{{x.link}}" >
+				</div>
+			 
+			</div>		   
+		   <hr>
+		   
+		   <div class="row">
+	            <ul class="nav nav-pills nav-justified">
+	                <li><a href="/">© 2014 Floristería - La Primavera</a>
+	       </div>
+		</div>
+	</footer>
+
+		<script src="js/dependencies/jquery-1.11.1.min.js"></script>
+		<script src="js/dependencies/bootstrap.min.js"></script>
+		<script src="js/mainApp.js"></script>
+		<script src="controllers/Lista.js"></script>
+		<script src="controllers/Ordenar.js"></script>
+		<script src="controllers/About.js"></script>
+		<script src="//localhost:35729/livereload.js"></script>
+	</body>
+</html>

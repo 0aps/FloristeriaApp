@@ -1,0 +1,13 @@
+{
+  "name": "Floristeria",
+  "version": "1.0.0",
+  "description": "Webb app for Floristeria la Primavera",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4"
+  },
+  "author": "0aps",
+  "license": "ISC"
+}
