@@ -22,22 +22,23 @@
 	</div>
 
 	<!-- Menu -->
-	<div class="container">
+	<div class="container" ng-controller="ListaCtrl">
 		<div class="row">
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 sidebar">
 
 				<ul class="nav nav-pills nav-stacked">
-				  <li class="active">
-				  		<a href="#/" data-toggle="tab">Inicio</a>
+				  <li ng-class="{active : isActive('/')}">
+				  		<a href="#/"/ data-toggle="tab">Inicio</a>
 				  </li>
-				  <li><a href="#Catalogo" data-toggle="tab">Catálogo de Flores</a></li>
-				  <li><a href="#Ordenar" data-toggle="tab">Ordenar</a></li>
+				  <li ng-class="{active : isActive('/Catalogo')}"><a href="#Catalogo">Catálogo de Flores</a></li>
+				  <li ng-class="{active : isActive('/Ordenar')}"><a href="#Ordenar" >Ordenar</a></li>
 
-				  <li class="collapse" data-toggle="tab" >
+				  <li class="dropdown">
 				    <a data-toggle="collapse" data-target="#sub1" href="">Contáctanos<span class="caret"></span></a>
 				    
-				    <ul id="sub1" class="collapse">
-				      <li><a href="#AcercaD">Acerca de</a></li> 
+				    <ul id="sub1" class="nav-pills nav-stacked collapse">
+				      <li ng-class="{active : isActive('/AcercaD')}"><a href="#AcercaD">Acerca de</a></li> 
+				      <li ng-class="{active : isActive('/Ubicanos')}"> <a href="#Ubicanos">Ubícanos</a></li>
 				    </ul>
 				  </li>
 				</ul>
@@ -65,7 +66,7 @@
 			</div>		   
 		   <hr>
 		   
-		   <div class="row">
+		   <div id="cright" class="row">
 	            <ul class="nav nav-pills nav-justified">
 	                <li><a href="/">© 2014 Floristería - La Primavera</a>
 	       </div>

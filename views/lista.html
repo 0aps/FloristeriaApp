@@ -1,3 +1,41 @@
 <div class="tab-pane" id="lista">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+	<h2>Ofertas de Temporada</h2>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+		  <!-- Indicadores -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li ng-repeat="slide in slides" data-target="#carousel-example-generic" ng-attr-data-slide-to="{{ slide.num }}"></li>
+		  </ol>
+
+		  <!-- Slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="images/Flores/especial1.jpg" alt="¡Desmuéstrale cuánto la amas en estas temporadas festivas!">
+		      <div class="carousel-caption">
+		        <h3>Corazón de Flor</h3>
+		        <p>¡Desmuéstrale cuánto la amas en estas temporadas festivas!</p>
+		      </div>
+		    </div>
+		    
+		    <div ng-repeat="slide in slides" class="item">
+		      <img ng-attr-src="{{slide.src}}" ng-attr-alt="{{slide.descripcion}}">
+		      <div class="carousel-caption">
+		     	<h3> {{ slide.title }} </h3>
+		     	<p> {{ slide.descripcion }} </p>
+		      </div>
+		    </div>
+		  </div
+		  >
+		  <!-- Controles -->
+		  <a class="left carousel-control" data-target="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </a>
+
+		  <a class="right carousel-control" data-target="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Siguiente</span>
+		  </a>
+		</div>
+</div>
