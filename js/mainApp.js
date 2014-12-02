@@ -1,10 +1,10 @@
 var app = angular.module('Floristeria', ['ngRoute']);
 
-
+  
 app.config(function ($routeProvider) {
 
   $routeProvider
-    .when('/Inicio', {
+    .when('/', {
       controller:'ListaCtrl',
       templateUrl:'views/lista.html'
     })
@@ -20,4 +20,4 @@ app.config(function ($routeProvider) {
       redirectTo:'/'
     });*/
 
-  });
+});
