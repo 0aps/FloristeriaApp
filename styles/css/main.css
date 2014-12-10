@@ -31,24 +31,33 @@ img {
 /* Carousel */
 .carousel-caption {
     color: #000000;
+    border-radius: 25px;
 }
 
-.carousel {
+#carousel-example-generic {
     background-color: #FFFFFF;
+    border-radius: 25px;
 }
 
 .carousel-indicators li {
   background-color: #E0E0E0;
+  border-radius: 25px;
 }
 .carousel-indicators .active {
   background-color: #3366FF;
+  border-radius: 25px;
+}
+.carousel-control{
+      border-radius: 25px;
 }
 .carousel-inner img{
-      width: 100%;
+    width: 100%;
     height: auto;
+    border-radius: 25px;
 }
 .carousel-caption{
     color: white;
+    border-radius: 25px;
 }
 body {
    background: -webkit-linear-gradient(45deg,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%);
@@ -66,6 +75,7 @@ footer{
 ul.nav-pills.nav-stacked.collapse{
   list-style-type: none;
   color: white;
+
 }
 div.jumbotron{
   background: url(/Images/flores/rosa-header.jpg);
@@ -74,13 +84,19 @@ div.jumbotron{
   background-position: center;
   margin-bottom: 120px;
   color: white;
+  border: double;
 }
-div.container{
-  margin-right: 0px;
-  margin-left: 0px;
-
-  border-left: 60px;
-  border-right: 60px;
-  border-bottom: 60px;
-  border-top: 60px;
+.nav{
+  border: dotted;
+  border-radius: 25px;
+  padding: 6px 6px 6px 6px;
+}
+#catalogo > div div img{
+  border: double;
+  border-radius: 25px;
+  padding: 6px 6px 6px 6px;
+}
+#catalogo > div div p{
+  font-style: oblique;
+  padding: 6px 6px 6px 6px;
 }
