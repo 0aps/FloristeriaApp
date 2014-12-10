@@ -19,6 +19,10 @@ app.config(function ($routeProvider) {
     .when('/Catalogo', {
       controller:'CatalogoCtrl',
       templateUrl:'views/catalogo.html'
+    })
+    .when('/Ubicanos', {
+      controller:'UbicanosCtrl',
+      templateUrl:'views/ubicanos.html'
     });/*
     .otherwise({
       redirectTo:'/'

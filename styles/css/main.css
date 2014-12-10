@@ -16,7 +16,7 @@ body {
 }
 
 /* Imgs Pro */
-img {
+.fo {
 	height: 100%;
 	width: 50%;
 }
@@ -30,7 +30,7 @@ img {
 
 /* Carousel */
 .carousel-caption {
-    color: #000000;
+    color: white;
 }
 
 .carousel {
@@ -42,4 +42,11 @@ img {
 }
 .carousel-indicators .active {
   background-color: #3366FF;
+}
+
+.carousel-inner > div > img {
+
+  width: 100%;
+  height: auto;
+
 }

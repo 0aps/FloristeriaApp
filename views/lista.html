@@ -11,7 +11,7 @@
 		  <!-- Slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img src="images/Flores/especial1.jpg" alt="¡Desmuéstrale cuánto la amas en estas temporadas festivas!">
+		      <img class="fo" src="images/Flores/especial1.jpg" alt="¡Desmuéstrale cuánto la amas en estas temporadas festivas!">
 		      <div class="carousel-caption">
 		        <h3>Corazón de Flor</h3>
 		        <p>¡Desmuéstrale cuánto la amas en estas temporadas festivas!</p>
@@ -19,7 +19,7 @@
 		    </div>
 		    
 		    <div ng-repeat="slide in slides" class="item">
-		      <img ng-attr-src="{{slide.src}}" ng-attr-alt="{{slide.descripcion}}">
+		      <img class="fo" ng-attr-src="{{slide.src}}" ng-attr-alt="{{slide.descripcion}}">
 		      <div class="carousel-caption">
 		     	<h3> {{ slide.title }} </h3>
 		     	<p> {{ slide.descripcion }} </p>
