@@ -30,12 +30,9 @@ body {
 
 /* Carousel */
 .carousel-caption {
-<<<<<<< HEAD
     color: #000000;
     border-radius: 25px;
-=======
     color: white;
->>>>>>> 4f66e9ba152abaf6d9293a670537cb1a04f4e788
 }
 
 #carousel-example-generic {
@@ -105,8 +102,6 @@ div.jumbotron{
   font-style: oblique;
   padding: 6px 6px 6px 6px;
 }
-=======
-}
 
 .carousel-inner > div > img {
 
@@ -114,4 +109,13 @@ div.jumbotron{
   height: auto;
 
 }
->>>>>>> 4f66e9ba152abaf6d9293a670537cb1a04f4e788
+#logo{
+  height: 200px;
+  width: 200px;
+  background: #ddf1f9 35%;
+  border-radius: 150px;
+  padding: 6px 6px 6px 6px;
+}
+h1 > small{
+  font-style: italic;
+}
