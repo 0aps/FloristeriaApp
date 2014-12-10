@@ -12,10 +12,10 @@ app.controller('ListaCtrl', function($scope, $location) {
 
   ptr = "images/Flores/especial";
   
-  descri.push({ title: "Canasta Floral", descripcion: "¡Esparse tu jardín con alegría y amor!"} );
+  descri.push({ title: "Flores Crocus", descripcion: "¡Esparse tu jardín con alegría y amor!"} );
   descri.push({ title: "Catalizador", descripcion: "¡Armonisa tu espíritu y obten sabiduría!"} );
-  descri.push({ title: "GiraFlor", descripcion: "¡Sé parte del torbellino!"} );
-  descri.push({ title: "Maleza Florecida", descripcion: "¡Regálale la flor que más le gusta!"} );
+  descri.push({ title: "Flores de manzano", descripcion: "¡Sé parte del torbellino!"} );
+  descri.push({ title: "Flores del corazon", descripcion: "¡Regálale la flor que más le gusta!"} );
 
   for(i = 2; i <= 5; ++i)
   	$scope.slides.push({num: i-1, src: ptr+i+".jpg", title: descri[i-2].title, descripcion: descri[i-2].descripcion});

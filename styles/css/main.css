@@ -43,3 +43,44 @@ img {
 .carousel-indicators .active {
   background-color: #3366FF;
 }
+.carousel-inner img{
+      width: 100%;
+    height: auto;
+}
+.carousel-caption{
+    color: white;
+}
+body {
+   background: -webkit-linear-gradient(45deg,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%);
+
+}
+
+footer{
+  font-variant: small-caps; 
+  text-decoration: underline;
+}
+.tab-pane > h2{
+  font-style: italic;
+}
+
+ul.nav-pills.nav-stacked.collapse{
+  list-style-type: none;
+  color: white;
+}
+div.jumbotron{
+  background: url(/Images/flores/rosa-header.jpg);
+  background-size: 1600px 1200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 120px;
+  color: white;
+}
+div.container{
+  margin-right: 0px;
+  margin-left: 0px;
+
+  border-left: 60px;
+  border-right: 60px;
+  border-bottom: 60px;
+  border-top: 60px;
+}
