@@ -1,18 +1,52 @@
 <div class="tab-pane" id="catalogo">
+<br>
+	<div ng-repeat="flor in flores" class="row form-group">
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h4 class="text-primary text-center"> <strong> {{flor[0].Titulo}} </strong></h4>	
+			<img class="img-responsive center-block" ng-attr-src="{{flor[0].link}}" > 
+			<p class=" text-center">Precio: RD$ {{flor[0].Precio}}
 
-	<div class="container"><br>
-		<div ng-repeat="flor in flores" class="row">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<p> {{flor[0].title}} </p>
-				<img  ng-attr-src="{{flor[0].link}}" > 
-			</div><div <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<p> {{flor[1].title}} </p>
-				<img  ng-attr-src="{{flor[1].link}}" >
-			</div><div <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<p> {{flor[2].title}} </p>
-				<img  ng-attr-src="{{flor[2].link}}" >
-			</div>
+			<a href="javascript:void(0)" class="text-right" ng-click="addList(flor[0])">
+             <span style="font-size:12px;" class="glyphicon glyphicon-plus"></span> </a>
+
+            <a href="javascript:void(0)" class="text-right" ng-click="removeList(flor[0])">
+            <span style="font-size:12px;" class="glyphicon glyphicon-minus"></span> </a>
+
+             </p>
+
+			<p class="text-center text-success" ng-show="ordenados[flor[0].Titulo]"> <strong> Ordenado: {{ordenados[flor[0].Titulo]}} </strong></p>
 		</div>
+		<div <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h4 class="text-primary text-center"> <strong> {{flor[1].Titulo}} </strong></h4>
+			<img class="img-responsive center-block" ng-attr-src="{{flor[1].link}}" >
+			<p class=" text-center">Precio: RD$ {{flor[1].Precio}}
 
+			<a href="javascript:void(0)" class="text-right" ng-click="addList(flor[1])">
+            <span style="font-size:12px;" class="glyphicon glyphicon-plus"></span> </a>
+			
+			<a href="javascript:void(0)" class="text-right" ng-click="removeList(flor[1])">
+            <span style="font-size:12px;" class="glyphicon glyphicon-minus"></span> </a>
+
+            </p>	
+
+
+			<p class="text-center text-success" ng-show="ordenados[flor[1].Titulo]"><strong>Ordenado: {{ordenados[flor[1].Titulo]}} </strong></p>
+		</div>
+		<div <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h4 class="text-primary text-center"> <strong>{{flor[2].Titulo}}</strong> </h4>
+			<img class="img-responsive center-block" ng-attr-src="{{flor[2].link}}" >
+			<p class=" text-center">Precio: RD$ {{flor[2].Precio}}
+
+			<a href="javascript:void(0)" class="text-right" ng-click="addList(flor[2])">
+            <span style="font-size:12px;" class="glyphicon glyphicon-plus"></span> </a>
+
+            <a href="javascript:void(0)" class="text-right" ng-click="removeList(flor[2])">
+            <span style="font-size:12px;" class="glyphicon glyphicon-minus"></span> </a>
+
+            </p>
+
+			<p class="text-center text-success" ng-show="ordenados[flor[2].Titulo]"><strong>Ordenado: {{ordenados[flor[2].Titulo]}} </strong></p>
+		</div>
+		
 
 </div>
