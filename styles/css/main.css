@@ -114,6 +114,8 @@ div.jumbotron{
   width: 200px;
   background: #ddf1f9 35%;
   border-radius: 150px;
+  border-style: dotted;
+  border: solid grey;
   padding: 6px 6px 6px 6px;
 }
 h1 > small{
